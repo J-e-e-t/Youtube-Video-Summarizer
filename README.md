@@ -24,13 +24,13 @@ The tool then generates a concise summary of the video's content, which users ca
 Clone the project
 
 ```bash
-  git clone https://github.com/atilaahmettaner/youtube-subtitle-summarizer.git
+  git clone https://github.com/J-e-e-t/Youtube-Video-Summarizer
 ```
 
 Go to the project directory
 
 ```bash
-  cd youtube-subtitle-summarizer.git
+  cd Youtube-Video-Summarizer
 ```
 
 Install dependencies
