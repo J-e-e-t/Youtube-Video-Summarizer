@@ -86,7 +86,7 @@ app.post("/", async (req, res) => {
                     newData = data
 
                     if (!data.items || data.items.length === 0) {
-                        const errorMessage = 'Hatalı bir YouTube bağlantısı girdiniz!';
+                        const errorMessage = 'You entered an incorrect YouTube link!';
                         algo.errorMessage = errorMessage;
                         return res.render('index', {algo});
                     }
@@ -196,7 +196,7 @@ function getYouTubeId(link) {
 
 async function langDet(lang, res) {
     if (lang === "tr") {
-        aiSummary = await getAiResponse(`Bu video transkripsiyonunu özetleyebilir misin:${res}.`)
+        aiSummary = await getAiResponse(`Can you summarize this video transcription?:${res}.`)
 
     } else if (lang === "en") {
         aiSummary = await getAiResponse(`summarize the transcription of this video?:${res}.`)
